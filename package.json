@@ -1,0 +1,17 @@
+{
+	"name": "aochelper",
+	"version": "1.0.0",
+	"type": "module",
+	"scripts": {
+		"prep": "node cli/prepare.js",
+		"dev": "node cli/dev.js"
+	},
+	"keywords": [],
+	"author": "DiaxuDev <diaxman.gameplay@gmail.com>",
+	"license": "ISC",
+	"dependencies": {
+		"chalk": "^5.3.0",
+		"dotenv": "^16.3.1",
+		"nodemon": "^3.0.1"
+	}
+}
