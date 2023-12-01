@@ -60,5 +60,5 @@ const input = await fetch(`https://adventofcode.com/${process.env.YEAR}/day/${pr
 		process.exit(1);
 	});
 
-writeFileSync(`./days/${process.argv[2]}/input.txt`, input);
+writeFileSync(`./days/${process.argv[2]}/input.txt`, input.trim());
 console.log(chalk.green("Input fetched"));

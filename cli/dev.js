@@ -7,8 +7,8 @@ if (process.argv.length < 4) {
 	process.exit(1);
 }
 
-if (process.argv[3] !== "1" && process.argv[3] !== "3") {
-	console.log(chalk.red("Day and part must be either 1 or 2"));
+if (process.argv[3] !== "1" && process.argv[3] !== "2") {
+	console.log(chalk.red("Part must be either 1 or 2"));
 	process.exit(1);
 }
 
