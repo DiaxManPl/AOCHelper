@@ -1,9 +1,16 @@
 import chalk from "chalk";
 import { readFileSync } from "fs";
 
-export default function (runner, day, part) {
+/*
+ * @param {Function} runner
+ * @param {Number} day
+ * @param {Number} part
+ * @param {Boolean} [test=false]
+ * @returns {void}
+ */
+export default function (runner, day, part, test = false) {
 	const start = performance.now();
-	const output = runner(readFileSync(`./days/${day}/input.txt`, "utf-8").split("\n"));
+	const output = runner(readFileSync(`./days/${day}/input${test ? ".test" : ""}.txt`, "utf-8").split("\n"));
 
 	Object.prototype.toString = function () {
 		return JSON.stringify(this, "", 2);

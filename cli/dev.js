@@ -19,7 +19,7 @@ if (!existsSync(`./days/${process.argv[2]}/part${process.argv[3] == 1 ? "One" : 
 
 nodemon({
 	script: `./days/${process.argv[2]}/part${process.argv[3] == 1 ? "One" : "Two"}.js`,
-	ext: "js",
+	ext: "js, txt",
 })
 	.on("start", () => {
 		console.log(chalk.gray(`Starting day ${process.argv[2]} part ${process.argv[3]} in dev mode...`));
@@ -29,4 +29,5 @@ nodemon({
 	})
 	.on("restart", () => {
 		console.log(chalk.gray("Restarting..."));
-	});
+	})
+	.on("quit", () => process.exit(0));

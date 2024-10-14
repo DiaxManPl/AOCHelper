@@ -4,7 +4,8 @@
 	"type": "module",
 	"scripts": {
 		"prep": "node cli/prepare.js",
-		"dev": "node cli/dev.js"
+		"dev": "node cli/dev.js",
+		"fetch": "node cli/fetch.js"
 	},
 	"keywords": [],
 	"author": "DiaxuDev <diaxman.gameplay@gmail.com>",

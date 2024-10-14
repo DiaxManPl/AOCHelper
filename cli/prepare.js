@@ -40,6 +40,7 @@ writeFileSync(
 	`./days/${process.argv[2]}/partTwo.js`,
 	`import run from "../../run.js";\n\nrun(\n\t(input) => {\n\t\treturn 0;\n\t},\n\t${process.argv[2]},\n\t2\n);`
 );
+writeFileSync(`./days/${process.argv[2]}/input.test.txt`, "");
 console.log(chalk.green("Day files created"));
 
 console.log(chalk.gray("Fetching input..."));
